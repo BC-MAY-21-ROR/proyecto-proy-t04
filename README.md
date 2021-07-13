@@ -1,7 +1,7 @@
 ![BrightCoders Logo](img/logo-bc.png)
 
 # Nombre del proyecto
-Definan un nombre para su proyecto
+Let's learn
 
 ## Problematica que atiende
 
