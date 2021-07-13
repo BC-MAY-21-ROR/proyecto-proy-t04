@@ -4,12 +4,11 @@
 Definan un nombre para su proyecto
 
 ## Problematica que atiende
-Los estudiantes de diferentes niveles de estudio suelen tener dificultades a la hora de investigar o realizar tareas, ya que a veces es dificil comprender las lecturas o videos en internet.
 
 Students of different levels sometimes don't understand the readings or videos of the topic of their assignments or they have doubts of some subjects seen in their classes.
 
 ## Propuesta de solución
-Plataforma en la cual maestros o estudiantes capacitados en diferentes areas, podran impartir tutorias en linea, en donde las personas con diferentes tipos de dudas podran agendar cita con uno de ellos.
+
 
 It will be develop a platform where teachers and students trained could teach online tutorials, and people with different doubts of their assignments or topics seen in their classes, could make an appointment with one of them.
 
