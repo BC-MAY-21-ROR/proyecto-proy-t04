@@ -17,7 +17,50 @@ It will be develop a platform where teachers and students trained could teach on
 
 ### Requerimientos funcionales
 
+
+User types
+
+• User-public
+• Access to topics and information on the page
+
+
+• User-Student
+• Access to content
+• Have access to participate in classes
+• Have access to discussions
+• Access to modify your account data
+• Login with an email and password
+
+
+• User-Advisor
+• Create schedules
+• Create classes
+• Create discussion
+• Access to content
+• Have access to participate in classes
+• Have access to discussions
+• Access to modify your account data
+• Login with an email and password
+
+
+• Administrator
+• Delete accounts
+• Create or modify accounts
+• Create schedules
+• Create classes
+• Access to content
+• Have access to participate in classes
+• Have access to discussions
+• Access to modify your account data
+• Access to delete topics
+• Access to delete Comments
+• Login with an email and password
+
 ### Requerimientos no funcionales
+• The system will be developed by the ruby on rails MVC architecture.
+• The system must be developed using the RubyCritic and Rubocop tools.
+• Every two weeks, managerial reports should be produced showing the effort invested in each of the components of the new system.
+• Unit tests must be performed with Rspec.
 
 ## Diseño del MVP
 
