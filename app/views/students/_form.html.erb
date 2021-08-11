@@ -1,0 +1,30 @@
+<h1>Students#_form</h1>
+<p>Find me in app/views/students/_form.html.erb</p>
+
+<div class="form d-flex justify-content-center">
+  <%= form_for(@student) do |student| %>
+    <div class="container_form">
+      <div class="form-group mt-5">
+        <%= student.label :name, class: "form-label"%>
+        <%= student.text_field :name, style: ""%>
+      </div>
+
+      <div class="form-group mt-5">
+        <%= student.label :lastname, class: "form-label"%>
+        <%= student.text_field :lastname, style: ""%>
+      </div>
+
+      <div class="form-group mt-5">
+        <%= student.label :email, class: "form-label"%>
+        <%= student.email_field :email, style: ""%>
+      </div>
+
+      <div class="form-group mt-5">
+        <%= student.label :password, class: "form-label"%>
+        <%= student.password_field :password, style: ""%>
+      </div>
+      
+      <%= student.submit "Save", class: "btn btn-success"%>
+    </div>
+  <% end %>
+</div>

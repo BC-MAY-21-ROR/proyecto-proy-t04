@@ -1,0 +1,23 @@
+<h1>Students#index</h1>
+<p>Find me in app/views/students/index.html.erb</p>
+<div id=table>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th colspan="2">Options</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @students.each do |s| %>
+      <tr>
+        <td><%= s.name %></td>
+        <td><%= s.lastname %></td>
+     
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
