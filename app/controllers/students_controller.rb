@@ -1,4 +1,5 @@
 class StudentsController < ApplicationController
+  before_action :set_student, only: %i[edit update destroy]
   def index
     @students = Student.all
   end
@@ -8,24 +9,20 @@ class StudentsController < ApplicationController
   end
 
   def create 
-    puts student_params
     Student.create(student_params)
     redirect_to students_path
   end
 
   def edit
-    set_student
   end
 
 
   def update
-    set_student
     @student.update(student_params)
     redirect_to students_path
   end
 
   def destroy
-    set_student
     @student.destroy
     redirect_to students_path
   end
