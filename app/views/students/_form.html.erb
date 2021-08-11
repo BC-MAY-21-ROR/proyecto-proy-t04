@@ -2,7 +2,7 @@
 <p>Find me in app/views/students/_form.html.erb</p>
 
 <div class="form d-flex justify-content-center">
-  <%= form_for(@student) do |student| %>
+  <%= form_with model: @student do |student| %>
     <div class="container_form">
       <div class="form-group mt-5">
         <%= student.label :name, class: "form-label"%>
