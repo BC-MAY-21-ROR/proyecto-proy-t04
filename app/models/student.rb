@@ -1,3 +1,2 @@
-class Student < ApplicationRecord
-  has_secure_password
+class Student < User
 end
