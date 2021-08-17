@@ -16,10 +16,10 @@ ActiveRecord::Schema.define(version: 2021_08_10_220944) do
   enable_extension "plpgsql"
 
   create_table "students", force: :cascade do |t|
-    t.string "email"
-    t.string "password_digest"
     t.string "name"
     t.string "lastname"
+    t.string "email"
+    t.string "password_digest"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
