@@ -1,5 +1,10 @@
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
 .container_page{
-  background-color:rgba(89, 190, 174, 0.705);
+  background-color: #caf0f8;
   display: flex;
   flex-direction: column;
   justify-content: center;
