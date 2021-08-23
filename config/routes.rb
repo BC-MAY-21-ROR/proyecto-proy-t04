@@ -6,7 +6,8 @@ Rails.application.routes.draw do
   devise_for :teachers, controllers: {
     registrations: 'teachers/registrations'
   }
-  
+  resources :teachers, only: [:index]
+
   get 'pages/index'
   get 'pages/register'
   resources :students

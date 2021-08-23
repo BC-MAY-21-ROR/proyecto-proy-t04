@@ -1,0 +1,22 @@
+<div class="">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>lastname</th>
+        <th>summary</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @teachers.each do |teacher| %>
+      <tr> 
+        <td><%= teacher.name %></td>
+        <td><%= teacher.lastname %></td>
+        <td><%= teacher.summary %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+</div>
