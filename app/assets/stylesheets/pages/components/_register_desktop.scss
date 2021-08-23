@@ -1,9 +1,5 @@
-footer{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-.container_page{
+
+.register_page{
   background-color: #caf0f8;
   display: flex;
   flex-direction: column;
@@ -34,6 +30,9 @@ footer{
         display: flex;
         flex-direction: column;
         font-size: 20px;
+        p{
+          display: block;
+        }
       }
 
       img{
