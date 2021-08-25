@@ -19,12 +19,13 @@
     <a class="nav-link" href="#">Link</a>
     <div class="dropdown">
       <a class="nav-link" href="#" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-        Dropdown
+        Subjects
       </a>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-        <li><button class="dropdown-item" type="button">Action</button></li>
-        <li><button class="dropdown-item" type="button">Another action</button></li>
-        <li><button class="dropdown-item" type="button">Something else here</button></li>
+        <li><%= link_to "Math", teachers_path(:summary => "Math"), class: "nav-link" %></li>
+        <li><%= link_to "Software", teachers_path(:summary => "Software"), class: "nav-link" %></li>
+        <li><%= link_to "Spanish", teachers_path(:summary => "Spanish"), class: "nav-link" %></li>
+        <li><%= link_to "English", teachers_path(:summary => "English"), class: "nav-link" %></li>
       </ul>
     </div>
     <a class="nav-link" href="#">Link</a>
