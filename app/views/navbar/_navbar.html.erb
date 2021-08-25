@@ -1,26 +1,26 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Let´s Learn</a>
+    <%= link_to "Let´s Learn", home_path, class: "navbar-brand"%>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-      
+
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
 
-        <!-- Dropdown -->
+
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle active" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Subjects
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><%= link_to "Math", teachers_path(:summary => "Math"), class: "nav-link" %></li>
-            <li><%= link_to "Software", teachers_path(:summary => "Software"), class: "nav-link" %></li>
-            <li><%= link_to "Spanish", teachers_path(:summary => "Spanish"), class: "nav-link" %></li>
-            <li><%= link_to "English", teachers_path(:summary => "English"), class: "nav-link" %></li>
+          <ul role="menu" class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><%= link_to "Math", teachers_path(:summary => "Math"), class: "dropdown-item" %></li>
+            <li><%= link_to "Software", teachers_path(:summary => "Software"), class: "dropdown-item" %></li>
+            <li><%= link_to "Spanish", teachers_path(:summary => "Spanish"), class: "dropdown-item" %></li>
+            <li><%= link_to "English", teachers_path(:summary => "English"), class: "dropdown-item" %></li>
           </ul>
         </li>
 

@@ -9,30 +9,21 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener('turbolinks:load', () => { 
+        var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
+        var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
+          return new bootstrap.Dropdown(dropdownToggleEl)
+        }) 
+      });
+    </script>
+    
   </head>
 
   <body>
 
-  <!-- navbar -->
-  <!-- 
-  <nav class="nav">
-    <a class="nav-link active" aria-current="page" href="/home">Active</a>
-    <a class="nav-link" href="#">Link</a>
-    <div class="dropdown">
-      <a class="nav-link" href="#" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-        Subjects
-      </a>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-        <li><%= link_to "Math", teachers_path(:summary => "Math"), class: "nav-link" %></li>
-        <li><%= link_to "Software", teachers_path(:summary => "Software"), class: "nav-link" %></li>
-        <li><%= link_to "Spanish", teachers_path(:summary => "Spanish"), class: "nav-link" %></li>
-        <li><%= link_to "English", teachers_path(:summary => "English"), class: "nav-link" %></li>
-      </ul>
-    </div>
-    <a class="nav-link" href="#">Link</a>
-    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-  </nav>
-  -->
   <%= render 'navbar/navbar'%>
 
    <p class="notice"><%= notice %></p>
@@ -64,8 +55,5 @@
   </footer>
   <!-- Footer -->
   
-
-<!-- End of .container -->
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </html>
