@@ -4,6 +4,11 @@ class TeachersController < ApplicationController
         @teachers = summary_matches()
     end
 
+    def profile
+        @teacher = Teacher.find(params[:id])
+
+    end
+
     def summary_matches
         teachers = []
         
