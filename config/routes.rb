@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   resources :students
   get 'home' , to:'pages#index'
   get 'register' , to:'pages#register'
+  get 'teachers_profile', to: 'teachers#profile'
   root "pages#index"
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html

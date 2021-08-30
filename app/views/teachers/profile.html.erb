@@ -1,0 +1,25 @@
+<div class="content">
+  <div calss="profile_img">
+    <img>
+  </div>
+
+  <div class="profile_information">
+    <div class="name_teacher">
+      <h1><%= "#{@teacher.name} #{@teacher.lastname}" %></h1>
+    </div>
+    
+    <div class="about_teacher">
+      <h3>
+        About <%= @teacher.name %>
+      </h3>
+      
+      <p>
+        <%= @teacher.about %>
+      </p>
+    </div>
+
+    <div>
+      <%= button_to "Make and appointment", class: "btn btn-primary" %>
+    </div>
+  </div>
+</div>

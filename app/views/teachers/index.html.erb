@@ -14,6 +14,7 @@
         <td><%= teacher.name %></td>
         <td><%= teacher.lastname %></td>
         <td><%= teacher.summary %></td>
+        <td><%= link_to "View Profile", teachers_profile_path(id: teacher.id) %></td>
       </tr>
       <% end %>
     </tbody>
