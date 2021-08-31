@@ -2,3 +2,8 @@
   @import "./components/mobil/index_mobile";
   
 }
+
+@media (min-width:760px){
+  @import "./components/tablet/index_tablet";
+
+}

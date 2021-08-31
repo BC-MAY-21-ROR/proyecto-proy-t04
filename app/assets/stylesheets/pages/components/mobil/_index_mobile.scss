@@ -28,6 +28,13 @@
 
   .value_proposition{
     @include bg_section;
+    .description{
+      .title{
+        h1{
+          text-align: center;
+        }
+      }
+    }
     .images{
       img{
         width: 100%;

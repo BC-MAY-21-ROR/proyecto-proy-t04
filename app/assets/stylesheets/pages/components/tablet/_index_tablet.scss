@@ -1,0 +1,66 @@
+@import '../variables';
+
+.container-home{
+  .main_section{  
+    .description{
+      p{
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+  }
+
+  .about_us{
+    @include bg_section;
+    
+    .descriptions{
+      .title{
+        h1{
+          text-align: center
+        }
+      }
+
+      .description{
+        p{
+          font-size: 20px;
+          text-align: center;
+        }
+      }
+    }
+    
+    .images{
+      display: flex;
+      justify-content: center;
+      img{
+        width: 80%;
+      }
+    }
+  }
+
+  .value_proposition{
+    .description{
+      .description_one{
+        p{
+          font-size: 20px;
+          text-align: center;
+        }
+      }
+
+      .description_two{
+        p{
+          font-size: 20px;
+          text-align: center;
+        }
+      }
+    }
+
+    .images{
+      display: flex;
+      justify-content: center;
+      img{
+        width: 80%;
+      }
+    }
+  }
+
+}
