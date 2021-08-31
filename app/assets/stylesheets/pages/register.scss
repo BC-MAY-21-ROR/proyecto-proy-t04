@@ -1,15 +1,15 @@
 @media (min-width:350px){
-  @import "./components/register_mobile";
+  @import "./components/mobil/register_mobile";
   
 }
 
 @media (min-width:760px){
-  @import "./components/register_tablet";
+  @import "./components/tablet/register_tablet";
 
 }
 
 @media (min-width: 1336px){
-  @import "./components/register_desktop";
+  @import "./components/desktop/register_desktop";
 
 }
 
