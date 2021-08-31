@@ -7,3 +7,8 @@
   @import "./components/tablet/index_tablet";
 
 }
+
+@media (min-width: 1336px){
+  @import "./components/desktop/index_desktop";
+
+}
