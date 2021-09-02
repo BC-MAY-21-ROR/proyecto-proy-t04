@@ -1,4 +1,4 @@
-<div class="container_page">
+<div class="container container-home">
   <section class="main_section">
     <div class="title">
       <h1>Lets Learn</h1>
@@ -12,7 +12,7 @@
     </div>
 
     <div class="buttom">
-      <%= link_to %>
+      <%= link_to "Sign up", register_path, class: "btn btn-secondary" %>
     </div>
   </section>
 
@@ -28,21 +28,17 @@
           Helping you find a professional who can explain you about the topics you do not understand.
         </p>
       </div>
-
-      <div class="buttom">
-        <%= link_to %>
-      </div>
     </div>
 
     <div class="images">
-      <img src="mdn-logo-sm.png" alt="IMG About Us">
+      <%= image_tag 'interesting.jpg'%>
     </div>
   </section>
 
   <section class="value_proposition">
     <div class="description">
       <div class="title">
-        <h4>Best Value Proposition</h4>
+        <h1>Best Value Proposition</h1>
       </div>
 
       <div class="description_one">
@@ -59,7 +55,7 @@
     </div>
     
     <div class="images">
-      <img src="mdn-logo-sm.png" alt="IMG Value Proposition">
+      <%= image_tag 'coach.jpg'%>
     </div>
 
   </section>

@@ -1,0 +1,9 @@
+@mixin bg_section{
+  align-items: center;
+  background-color: rgba(245, 244, 244, 0.473);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding: 10px;
+}

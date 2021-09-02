@@ -1,0 +1,14 @@
+@media (min-width:350px){
+  @import "./components/mobil/index_mobile";
+  
+}
+
+@media (min-width:760px){
+  @import "./components/tablet/index_tablet";
+
+}
+
+@media (min-width: 1336px){
+  @import "./components/desktop/index_desktop";
+
+}

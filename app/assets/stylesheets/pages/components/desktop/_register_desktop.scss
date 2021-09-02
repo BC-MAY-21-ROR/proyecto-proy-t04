@@ -1,45 +1,43 @@
+
 .register_page{
-  background-color: #caf0f8;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   margin-top: -64px;
-
+  padding-bottom: 100px;
+  padding-top: 150px;
 
   h1{
-    margin-bottom: 20px;
+    margin-top: -100px;
+    padding-bottom: 50px;
   }
 
   .buttoms_select{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     
-
     .link_to_role{
-      width: 60%;
-      height: 60%;
+      width: 20%;
+      height: 20%;
       display: flex;
-      flex-direction: column-reverse;
-      margin-bottom: 20px;
+      flex-direction: column;
 
       .description_role{
         display: flex;
         flex-direction: column;
         font-size: 20px;
         p{
-          display: none;
+          display: block;
         }
       }
 
       img{
         width: 100%;
         height: 100%;
-        margin-top: 10px;
+        margin-bottom: 40px;
       }
-
     }
 
   }

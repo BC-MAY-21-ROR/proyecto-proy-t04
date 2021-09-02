@@ -1,0 +1,45 @@
+@import '../variables';
+
+.container-home{
+
+  .main_section{
+    @include bg_section;
+    .title{
+      h1{
+        text-align: center;
+      }
+    }
+  }
+  .about_us{
+    @include bg_section;
+    .descriptions{
+      .title{
+        h1{
+          text-align: center
+        }
+      }
+    }
+    .images{
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+  .value_proposition{
+    @include bg_section;
+    .description{
+      .title{
+        h1{
+          text-align: center;
+        }
+      }
+    }
+    .images{
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+}
