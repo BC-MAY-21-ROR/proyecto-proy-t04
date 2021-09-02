@@ -5,5 +5,5 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Teacher.create!(email: 'prue@gmail.com', password: '1234345345', name: "alejandro", lastname: "vazquez", about:"prueba", tags: "prueba", summary:"prueba", object:"prueba")     
-Student.create!(email: 'prueba@gmail.com', password: '1234345345', name: "alejandro", lastname: "vazquez", about:"", tags: "", summary:"", object:"")  
+Teacher.create!(email: 'prueba5@gmail.com', password: '1234345345', name: "alejandro", lastname: "vazquez", about:"prueba", tags: "escritura, lectura", summary:"Math", object:"prueba")     
+#Student.create!(email: 'prueba@gmail.com', password: '1234345345', name: "alejandro", lastname: "vazquez", about:"", tags: "", summary:"", object:"")  

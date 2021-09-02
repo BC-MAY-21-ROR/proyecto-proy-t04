@@ -1,23 +1,24 @@
-<div class="container">
-  <table class="table table-hover">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>lastname</th>
-        <th>summary</th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <% @teachers.each do |teacher| %>
-      <tr> 
-        <td><%= teacher.name %></td>
-        <td><%= teacher.lastname %></td>
-        <td><%= teacher.summary %></td>
-        <td><%= link_to "View Profile", teachers_profile_path(id: teacher.id) %></td>
-      </tr>
-      <% end %>
-    </tbody>
-  </table>
-
+<div class="card-teacher">
+  <% @teachers.each do |teacher| %>
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <div class="user-icon-container">
+        <%= image_tag "user", class: "user-icon" %>
+      </div>
+      <h4><%= teacher.name+" "+teacher.lastname %></h4>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"><%= teacher.summary %></li>
+      <% summaryT = teacher.tags.split(',')%>
+      <li class="list-group-item">
+        <% summaryT.each do |t| %>
+        <span class="badge bg-info text-dark"><%= t%></span>
+        <% end %>
+      </li>
+    </ul>
+    <div class="card-body">
+      <%= link_to "View Profile", teachers_profile_path(id: teacher.id) %>
+    </div>
+  </div>
+  <% end %>
 </div>
