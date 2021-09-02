@@ -1,7 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <%= link_to "Let´s Learn", home_path, class: "navbar-brand"%>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -11,9 +12,9 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
 
-
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle active" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
             Subjects
           </a>
           <ul role="menu" class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -23,6 +24,23 @@
             <li><%= link_to "English", teachers_path(:summary => "English"), class: "dropdown-item" %></li>
           </ul>
         </li>
+
+        <% if student_signed_in? %>
+          <li class="nav-item">
+            <%= link_to 'Log out', destroy_student_session_path, method: :delete, class: "nav-link active", id: "logOutS" %>
+          </li>
+        <% elsif teacher_signed_in? %>
+          <li class="nav-item">
+            <%= link_to 'Log out', destroy_teacher_session_path, method: :delete, class: "nav-link active", id: "logOutT" %>
+          </li>
+        <% else %>
+          <li class="nav-item">
+            <%= link_to 'Sign in', home_path, class: "nav-link active", id: "signIn" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to 'Sign up', register_path, class: "nav-link active", id: "signUp" %>
+          </li>
+        <% end %>
 
       </ul>
     </div>
