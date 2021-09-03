@@ -1,0 +1,28 @@
+.card-teacher{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .card{
+    height: 370px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+
+    .card-body{
+      height: 170px;
+      .user-icon-container{  
+        display: flex;
+
+        .user-icon{
+          margin: 0%;
+          padding: 0px;
+          width: 90px;
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+
+
