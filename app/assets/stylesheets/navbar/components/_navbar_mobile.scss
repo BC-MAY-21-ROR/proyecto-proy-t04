@@ -1,0 +1,102 @@
+@mixin style1 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+  width: 100px;
+}
+
+@mixin style2 {
+  border:2px solid white;
+  border-radius: 5px;
+}
+
+.navbar {
+  background-color: #08355e;
+
+  .navbar-brand {
+    width: 100px;
+    background-color: #08355e;
+  }
+
+  #navbarSupportedContent {
+    text-align: center;
+
+    .nav-link {
+      font-weight: bold;
+      color: white;
+      &:hover,
+      &:active {
+        color: #caf0f8;
+      }
+    }
+
+    .dropdown-menu{
+      border:none;
+      background-color: #08355e;
+      text-align: center;
+
+      .dropdown-item{
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+        font-weight: bold;
+        width: 110px;
+        &:hover{
+          background-color: transparent;
+          border-bottom: 1px solid white;
+        }
+      }
+    }
+  }
+
+  #sign-in-up{
+
+    #log-out-li{
+      margin-left: auto;
+      margin-right: auto;
+      width: 100px;
+
+      #logOutS{
+        @include style2();
+
+        &:hover{
+          border:2px solid #caf0f8;
+        }
+      }
+
+      #logOutT{
+        @include style2();
+
+        &:hover{
+          border:2px solid #caf0f8;
+        }
+      }
+    }
+
+    #sign-in-li{
+      @include style1();
+
+      #signIn{
+        @include style2();
+        margin-right: 5px;
+
+        &:hover{
+          border:2px solid #caf0f8;
+        }
+      }
+    }
+
+    #sign-up-li{
+      @include style1();
+
+      #signUp{
+        @include style2();
+        margin-right: 5px;
+
+        &:hover{
+          border:2px solid #caf0f8;
+        }
+      }
+    }
+  }
+}
