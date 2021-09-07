@@ -1,15 +1,17 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
-    <%= link_to "Let´s Learn", home_path, class: "navbar-brand"%>
+    <%= image_tag "LLlogo.png", class: "navbar-brand", id: "logo" %>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      aria-controls="navbarSupportedContent" style="border: none; box-shadow: none" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <%= image_tag "list.svg", class: "navbar-toggler-icon"%>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="/home">Home</a>
         </li>
 
         <li class="nav-item dropdown">
@@ -24,25 +26,51 @@
             <li><%= link_to "English", teachers_path(:summary => "English"), class: "dropdown-item" %></li>
           </ul>
         </li>
+      </ul>
 
+      <div id="sign-in-up">
         <% if student_signed_in? %>
-          <li class="nav-item">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0"> 
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <%= current_student.name %>
+            </a>
+            <ul role="menu" class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><%= link_to "Edit profile", edit_student_registration_path, class: "dropdown-item" %></li>
+            </ul>
+          </li>        
+          <li class="nav-item" id= "log-out-li">
             <%= link_to 'Log out', destroy_student_session_path, method: :delete, class: "nav-link active", id: "logOutS" %>
           </li>
+        </ul>
         <% elsif teacher_signed_in? %>
-          <li class="nav-item">
-            <%= link_to 'Log out', destroy_teacher_session_path, method: :delete, class: "nav-link active", id: "logOutT" %>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <%= current_teacher.name %>
+            </a>
+            <ul role="menu" class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><%= link_to "Edit profile", edit_teacher_registration_path, class: "dropdown-item" %></li>
+            </ul>
           </li>
+          <li class="nav-item" id= "log-out-li">
+            <%= link_to 'Log out', destroy_teacher_session_path, method: :delete, class: "nav-link active", id: "logOutT" %>
+          </li>        
+        </ul>
         <% else %>
-          <li class="nav-item">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item" id= "sign-in-li"> 
             <%= link_to 'Sign in', home_path, class: "nav-link active", id: "signIn" %>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" id= "sign-up-li">
             <%= link_to 'Sign up', register_path, class: "nav-link active", id: "signUp" %>
           </li>
+        </ul>
         <% end %>
+      </div>
 
-      </ul>
     </div>
   </div>
 </nav>

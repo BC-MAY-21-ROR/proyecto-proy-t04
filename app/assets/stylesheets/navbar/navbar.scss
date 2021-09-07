@@ -1,0 +1,15 @@
+@media (min-width:350px){
+  @import "./components/navbar_mobile";
+  
+}
+
+@media (min-width:768px){
+  @import "./components/navbar_tablet";
+
+}
+
+
+@media (min-width:992px){
+  @import "./components/navbar_desktop";
+
+}
