@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get 'pages/register'
   get 'home' , to:'pages#index'
   get 'register' , to:'pages#register'
+  get 'login', to:'pages#login'
   get 'teachers_profile', to: 'teachers#profile'
   root "pages#index"
 

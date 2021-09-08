@@ -1,0 +1,32 @@
+<div class="container_page register_page">
+  <h1>Choose a role </h1>
+
+  <div class="buttoms_select">
+
+    <div class="link_to_role">
+      
+      <%= link_to new_student_session_path do %>
+        <%= image_tag "student.svg" %>
+      <% end %>
+      
+      <div class="description_role">
+        <h2>Student</h2>
+        <p>Solve all your doubts with the help of professionals.</p>  
+      </div>
+
+    </div>
+
+    <div class="link_to_role">
+      
+      <%= link_to new_teacher_session_path do %>
+        <%= image_tag "aprendiendo.svg" %>
+      <% end %>
+
+      <div class="description_role">
+        <h2>Teacher</h2>
+        <p>Help students to have a better understanding of the world</p>
+      </div>
+
+    </div>
+
+</div>
