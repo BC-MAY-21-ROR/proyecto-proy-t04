@@ -10,7 +10,6 @@ Rails.application.routes.draw do
 
   get 'pages/index'
   get 'pages/register'
-  resources :students
   get 'home' , to:'pages#index'
   get 'register' , to:'pages#register'
   get 'login', to:'pages#login'
