@@ -1,59 +1,90 @@
-<h2>Sign up</h2>
+<div class="container">
+  <div class="register-information">
+    <div class="title">
+      <h2>Teach our passion</h2>
+    </div>
+    <div class="description">
+      <div clas="desc-info">
+        <%= image_tag "comprobar", class: "desc-img" %>
+        
+        <p class="info">Solo necesito unas veinte palabras para que se mire cool esto</p>
+      
+      </div>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= render "teachers/shared/error_messages", resource: resource %>
+      <div clas="desc-info">
+        <%= image_tag "comprobar", class: "desc-img" %>
+        
+        <p class="info">Solo necesito unas veinte palabras para que se mire cool esto</p>
+      </div>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+      <div clas="desc-info">
+        <%= image_tag "comprobar", class: "desc-img" %>
+        
+        <p class="info">Solo necesito unas veinte palabras para que se mire cool esto</p>
+      </div>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
-  </div>
+  <div class="form-teacher">
+    <h2>Sign up</h2>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-  </div>
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= render "teachers/shared/error_messages", resource: resource %>
+
+      <div class="field">
+        <%= f.label :email %><br />
+        <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :password %>
+        <% if @minimum_password_length %>
+        <em>(<%= @minimum_password_length %> characters minimum)</em>
+        <% end %><br />
+        <%= f.password_field :password, autocomplete: "new-password" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :password_confirmation %><br />
+        <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+      </div>
+      
+      <div class="field">
+        <%= f.label :name %><br />
+        <%= f.text_field :name, autofocus: true, autocomplete: "name" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :lastname %><br />
+        <%= f.text_field :lastname, autofocus: true, autocomplete: "lastname" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :about %><br />
+        <%= f.text_field :about, autofocus: true, autocomplete: "about" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :tags %><br />
+        <%= f.text_field :tags, autofocus: true, autocomplete: "tags" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :summary %><br />
+        <%= f.text_field :summary, autofocus: true, autocomplete: "summary" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :object %><br />
+        <%= f.text_field :object, autofocus: true, autocomplete: "object" %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit "Sign up" %>
+      </div>
+    <% end %>
+
+    <%= render "teachers/shared/links" %>
   
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name, autofocus: true, autocomplete: "name" %>
   </div>
-
-  <div class="field">
-    <%= f.label :lastname %><br />
-    <%= f.text_field :lastname, autofocus: true, autocomplete: "lastname" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :about %><br />
-    <%= f.text_field :about, autofocus: true, autocomplete: "about" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :tags %><br />
-    <%= f.text_field :tags, autofocus: true, autocomplete: "tags" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :summary %><br />
-    <%= f.text_field :summary, autofocus: true, autocomplete: "summary" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :object %><br />
-    <%= f.text_field :object, autofocus: true, autocomplete: "object" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
-
-<%= render "teachers/shared/links" %>
+</div>
