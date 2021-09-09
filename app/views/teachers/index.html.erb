@@ -1,23 +1,24 @@
 <div class="card-teacher">
   <% @teachers.each do |teacher| %>
   <div class="card" style="width: 18rem;">
-    <div class="card-body">
+    <div class="card-body icon-bg">
       <div class="user-icon-container">
         <%= image_tag "user", class: "user-icon" %>
       </div>
       <h4><%= teacher.name+" "+teacher.lastname %></h4>
     </div>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item"><%= teacher.summary %></li>
+      <li class="list-group-item"><h4><%= teacher.summary %></h4></li>
       <% summaryT = teacher.tags.split(',')%>
       <li class="list-group-item">
+        <h6>Topics</h6>
         <% summaryT.each do |t| %>
         <span class="badge bg-info text-dark"><%= t%></span>
         <% end %>
       </li>
     </ul>
-    <div class="card-body">
-      <%= link_to "View Profile", teachers_profile_path(id: teacher.id) %>
+    <div class="card-body btn-profile">
+      <%= link_to "View Profile", teachers_profile_path(id: teacher.id), class: "btn btn-primary" %>
     </div>
   </div>
   <% end %>
