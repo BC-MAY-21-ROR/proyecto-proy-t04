@@ -1,0 +1,54 @@
+.container{
+  .register-information{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-right: 10%;
+
+    .title{
+      h1{
+        text-align: center;
+      }
+    }
+
+    .description{
+      div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 15px;
+        padding-left: 27%;
+        p{
+          margin-top: 15px;
+          margin-left: 10px;
+
+          font-size: 20px;
+          text-align: center;
+        }
+      }
+    }
+
+    .img-teacher-singup-form{
+      display: flex;
+      justify-content: center;
+      margin-top: 5%;
+      img{
+        width: 80%;
+        border-radius: 20px;
+        box-shadow: -4px 3px 14px -2px rgba(0,0,0,0.65);
+        -webkit-box-shadow: -4px 3px 14px -2px rgba(0,0,0,0.65);
+        -moz-box-shadow: -4px 3px 14px -2px rgba(0,0,0,0.65);
+      }
+    }
+
+  }
+
+  .form-teacher{
+    width:70%;
+    
+
+
+  }
+
+}
