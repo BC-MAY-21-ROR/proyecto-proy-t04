@@ -1,0 +1,33 @@
+.content {
+	.profile-information {
+		.profile-img {
+			.profile-image {
+				width: 180px;
+			}
+		}
+
+		.name-teacher {
+			h1 {
+				font-size: 40px;
+			}
+		}
+
+		.about-teacher {
+			h3 {
+				font-size: 30px;
+			}
+			p {
+				font-size: 17px;
+			}
+		}
+	}
+
+	.appointment {
+		.btn-app {
+			font-size: 20px;
+			&:hover {
+				font-weight: bold;
+			}
+		}
+	}
+}

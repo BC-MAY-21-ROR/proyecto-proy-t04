@@ -1,0 +1,11 @@
+@media (min-width:350px) {
+	@import "./components/profile_mobile";
+}
+
+@media (min-width:768px) {
+	@import "./components/profile_tablet";
+}
+
+@media (min-width:992px) {
+	@import "./components/profile_desktop";
+}
