@@ -1,25 +1,28 @@
 <div class="content">
-  <div calss="profile_img">
-    <img>
-  </div>
+	<div class="profile-information">
 
-  <div class="profile_information">
-    <div class="name_teacher">
-      <h1><%= "#{@teacher.name} #{@teacher.lastname}" %></h1>
-    </div>
-    
-    <div class="about_teacher">
-      <h3>
-        About <%= @teacher.name %>
-      </h3>
-      
-      <p>
-        <%= @teacher.about %>
-      </p>
-    </div>
+		<div class="profile-img">
+			<%= image_tag "user.svg" , class: "profile-image" %>
+		</div>
 
-    <div>
-      <%= button_to "Make and appointment", class: "btn btn-primary" %>
-    </div>
-  </div>
+		<div class="name-teacher">
+			<h1><%= "#{@teacher.name} #{@teacher.lastname}" %></h1>
+		</div>
+
+		<div class="about-teacher">
+			<h3>
+				About Me
+			</h3>
+
+			<p>
+				<%= @teacher.about %>
+			</p>
+
+		</div>
+	</div>
+	
+	<div class="appointment">
+		<%= link_to "Make an appointment", home_path, class: "btn-app" %>
+	</div>
+
 </div>
