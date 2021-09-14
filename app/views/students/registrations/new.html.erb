@@ -1,39 +1,73 @@
-<h2>Sign up</h2>
+<div class="container cont-signup">
+  <div class="register-information">
+    <div class="title">
+      <h1>Delighted to learn every day</h1>
+    </div>
+    
+    <div class="description">
+      <div clas="desc-info">
+        <%= image_tag "marca-de-verificacion", class: "desc-img" %>
+        
+        <p class="info">Get help from professionals</p>
+      
+      </div>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= render "students/shared/error_messages", resource: resource %>
+      <div clas="desc-info">
+        <%= image_tag "marca-de-verificacion", class: "desc-img" %>
+        
+        <p class="info">Learn with a smile</p>
+      </div>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+      <div clas="desc-info">
+        <%= image_tag "marca-de-verificacion", class: "desc-img" %>
+        
+        <p class="info">Learn new ways to teach</p>
+      </div>
+    </div>
+    
+    <div class="img-teacher-singup-form">
+      <%= image_tag "student-learning" %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
-  </div>
+  <div class="form-student">
+    <h2>Sign up</h2>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-  </div>
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= render "students/shared/error_messages", resource: resource %>
 
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name, autofocus: true, autocomplete: "name" %>
-  </div>
+      <div class="field form-group">
+        <%= f.label :email %><br />
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control" %>
+      </div>
 
-  <div class="field">
-    <%= f.label :lastname %><br />
-    <%= f.text_field :lastname, autofocus: true, autocomplete: "lastname" %>
-  </div>
+      <div class="field form-group">
+        <%= f.label :password %>
+        <% if @minimum_password_length %>
+        <em>(<%= @minimum_password_length %> characters minimum)</em>
+        <% end %><br />
+        <%= f.password_field :password, autocomplete: "new-password", class: "form-control" %>
+      </div>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
+      <div class="field form-group">
+        <%= f.label :password_confirmation %><br />
+        <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control" %>
+      </div>
 
-<%= render "students/shared/links" %>
+      <div class="field form-group">
+        <%= f.label :name %><br />
+        <%= f.text_field :name, autofocus: true, autocomplete: "name", class: "form-control" %>
+      </div>
+
+      <div class="field form-group">
+        <%= f.label :lastname %><br />
+        <%= f.text_field :lastname, autofocus: true, autocomplete: "lastname", class: "form-control" %>
+      </div>
+
+      <div class="actions btn-register">
+        <%= f.submit "Sign up", class: "btn btn-primary" %>
+      </div>
+    <% end %>
+  
+  </div>
+</div>

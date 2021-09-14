@@ -1,8 +1,9 @@
 @import '../variables';
 
-.container-home{
-
-  .main_section{
+.container-home-i{
+  display: flex;
+  flex-direction: column;
+  .main_section-i{
     @include bg_section;
     .title{
       h1{
