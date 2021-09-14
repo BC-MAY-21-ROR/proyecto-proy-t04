@@ -1,0 +1,7 @@
+@media (min-width:350px) {
+  @import "./components/new_mobile";
+}
+
+@media (min-width:992px) {
+  @import "./components/new_desktop";
+}
