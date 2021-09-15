@@ -1,0 +1,20 @@
+.container-session {
+
+  .form {
+    height: 350px;
+    padding: 5px;
+    width: 400px;
+
+    .links {
+      left: -90px;
+
+      .btn-sign-in {
+        margin-bottom: 15px;
+      }
+
+      .btn-forgot-password {
+        margin-top: 15px;
+      }
+    }
+  }
+}
