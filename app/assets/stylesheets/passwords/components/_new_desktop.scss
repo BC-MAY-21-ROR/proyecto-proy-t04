@@ -1,0 +1,39 @@
+.password-container {
+  margin-bottom: 20vh;
+
+  .password-form {
+    width: 400px;
+
+    .field {
+      .form-control {
+        width: 380px;
+      }
+    }
+
+    .actions {
+      .btn-primary {
+        width: 380px;
+      }
+    }
+
+    .links {
+      left: -155px;
+
+      .btn-sign-in {
+        margin-bottom: 30px;
+
+        .sign-up {
+          padding: 10px;
+        }
+      }
+
+      .btn-log-in {
+        margin-top: 30px;
+
+        .log-in {
+          padding: 10px;
+        }
+      }
+    }
+  }
+}

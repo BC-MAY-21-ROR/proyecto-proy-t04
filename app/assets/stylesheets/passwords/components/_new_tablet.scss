@@ -1,0 +1,37 @@
+.password-container {
+
+  .password-form {
+    width: 360px;
+
+    .field {
+      .form-control {
+        width: 345px;
+      }
+    }
+
+    .actions {
+      .btn-primary {
+        width: 345px;
+      }
+    }
+
+
+    .links {
+      left: -142px;
+
+      .btn-sign-in {
+
+        .sign-up {
+          padding: 7px;
+        }
+      }
+
+      .btn-log-in {
+
+        .log-in {
+          padding: 7px;
+        }
+      }
+    }
+  }
+}

@@ -20,9 +20,9 @@
 
 		</div>
 	</div>
-	
+	<% if student_signed_in? %>
 	<div class="appointment">
-		<%= link_to "Make an appointment", home_path, class: "btn-app" %>
+	  <%= link_to "Make an appointment", home_path, class: "btn-app" %>
 	</div>
-
+	<% end%>
 </div>
