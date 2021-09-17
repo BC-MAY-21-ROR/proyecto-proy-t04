@@ -1,0 +1,80 @@
+.password-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15vh;
+
+  .password-form {
+    align-items: center;
+    background-color: rgba(232, 233, 236, 0.6);
+    border-radius: 10px;
+    box-shadow: -4px 3px 14px -2px rgba(0, 0, 0, 0.65);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 320px;
+    -webkit-box-shadow: -4px 3px 14px -2px rgba(0, 0, 0, 0.65);
+    -moz-box-shadow: -4px 3px 14px -2px rgba(0, 0, 0, 0.65);
+
+    .field {
+      margin-bottom: 15px;
+
+      .form-control {
+        width: 300px;
+      }
+    }
+
+    .actions {
+      margin-top: 15px;
+
+      .btn-primary {
+        width: 300px;
+      }
+    }
+
+
+    .links {
+      margin-top: 4vh;
+      left: -117px;
+      position: relative;
+
+      .btn-sign-in {
+        margin-bottom: 10px;
+
+        .sign-up {
+          background-color: #ff801f;
+          border-radius: 5px;
+          color: white;
+          font-size: 15px;
+          padding: 5px;
+          text-decoration: none;
+
+          &:hover {
+            background-color: #e28742;
+          }
+        }
+      }
+
+      .btn-log-in {
+        margin-top: 15px;
+
+        .log-in {
+          background-color: #ff801f;
+          border-radius: 5px;
+          color: white;
+          font-size: 15px;
+          padding: 5px;
+          text-decoration: none;
+
+          &:hover {
+            background-color: #e28742;
+          }
+        }
+      }
+    }
+  }
+}
